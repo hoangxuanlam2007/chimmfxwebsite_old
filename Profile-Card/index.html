@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+
+  <!--
+
+    - Hi there! This website has been coded by Chimm so the copyright belongs to me, do not re-up
+    or copying any Content / Source Codes. It only can be used for Studying Purposes.
+
+                                                                 - 2021 ChimmFX
+
+
+  -->
+
+
+
+  <!-- =======================================================
+  * Website Name: ChimmFX Official Website
+  * Owner: Hoàng Xuân Lâm
+  * Date Modified: 02/09/2021
+  * Version: 1.2.0
+  ======================================================== -->
+
+
+
+  <!--Head-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ChimmFX - Official Website</title>
+    <meta name="description"
+          content="ChimmFX's Official Website."/>
+          <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+          <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+          <link rel="icon" href="https://pbs.twimg.com/media/EhetgLfXkAAJShP?format=jpg&name=small">
+          <link rel="stylesheet" href="css/default.css" id="theme-color">
+          <link rel="stylesheet" href="profile-card.css">
+          <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<style>
+  
+  div {
+    text-align: center;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  </style>
+
+</head>
+<body>
+
+<!--navigation-->
+
+<div class="sidebar">
+  <div class="logo-details">
+    <i class='bx bxl-dev-to icon'></i>
+      <div class="logo_name">ChimmFX </br>Profile</div>
+      <i class='bx bx-menu' id="btn" ></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a href="../index.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Home</span>
+      </a>
+       <span class="tooltip">Home</span>
+    </li>
+   <li>
+     <a href="https://facebook.com/ch1mmm/" target="_blank" rel="noopener noreferrer">
+      <i class="far fa-smile-wink"></i>
+       <span class="links_name">Made By ChimmFX</span>
+     </a >
+     <span class="tooltip">By ChimmFX</span>
+   </li>
+   <li class="profile">
+       <div class="profile-details">
+         <img src="https://i.imgur.com/vay5gLK.png" alt="profileImg">
+         <div class="name_job">
+           <div class="name">Hoàng Xuân Lâm</div>
+           <div class="job">WEB/APP DEVELOPER</div>
+         </div>
+       </div>
+       <i class='fas fa-dove' id="log_out" ></i>
+   </li>
+  </ul>
+</div>
+
+
+
+
+
+<script>
+let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+
+closeBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("open");
+  menuBtnChange();
+});
+
+searchBtn.addEventListener("click", ()=>{ 
+  sidebar.classList.toggle("open");
+  menuBtnChange();
+});
+
+
+function menuBtnChange() {
+ if(sidebar.classList.contains("open")){
+   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+ }else {
+   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+ }
+}
+</script>
+
+
+
+
+
+
+
+<!-- Profile Card -->
+<div class="card" data-state="#about">
+  <div class="card-header">
+    <div class="card-cover" style="background-image: url(https://i.imgur.com/HWC4CH2.jpeg)"></div>
+    <img class="card-avatar" src="https://i.imgur.com/vay5gLK.png" alt="avatar" />
+    <h1 class="card-fullname">Hoàng Xuân Lâm
+    </h1>
+    <h2 class="card-jobtitle" style="font-family: segoe UI;">Young Web/App Developer</h2>
+  </div>
+  <div class="card-main">
+    <div class="card-section is-active" id="about">
+      <div class="card-content">
+        <div class="card-subtitle" style="font-family: segoe UI;">ABOUT ME</div>
+        <p class="card-desc" style="font-family: segoe UI;">Hi! Mình là Lâm, mình sinh ngày 31/10/2007 và còn khá là trẻ. Sở thích của mình là Code Web và App.
+          Ngoài ra, mình còn rất thích thiết kế đồ họa với After Effects, Photoshop, Blender. Mình có một tài vặt đó chính là 
+          rất giỏi về CNTT. Năm lớp 4 mình đã có thể cài Win full rồi. Lên năm lớp 8-9 thì mình bắt đầu tìm hiểu về lập trình Web và App.
+          Lên lớp 9 mình được học đội tuyển HSG CNTT, điều đó tiếp thêm cho mình rất nhiều động lực.
+          Trang Web các bạn đang thấy ở đây là thành quả mà mình đã tu luyện trong mấy tháng qua.
+          Mình thường hay học hỏi rất nhiều từ trên mạng. Và ngoài ra thì mình cũng tìm các nguồn từ W3-Schools,
+          kênh Youtube Dark Code để học hỏi nhưng cái hay. Cảm ơn các bạn đã ghé thăm nhé ^^
+        </p>
+      </div>
+      <div class="card-social">
+        <a href="https://facebook.com/ch1mmm/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+        <a href="https://www.instagram.com/ch1mm.aep/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+        <a href="https://twitter.com/ChimmFX" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+            <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+            <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </svg></a>
+      </div>
+    </div>
+    <div class="card-section" id="experience">
+      <div class="card-content">
+        <div class="card-subtitle">EXPERIENCE</div>
+        <div class="card-timeline">
+          <div class="card-item" data-year="2017">
+            <div class="card-item-title">Cài Win dạo - Full</div>
+            <div class="card-item-desc" style="text-align: left; margin-left: 10px;">Cài Windows XP - 10 mọi hình thức USB boot, WinToHDD, ...</div>
+          </div>
+          <div class="card-item" data-year="2018">
+            <div class="card-item-title">Get Started With Editing</div>
+            <div class="card-item-desc">Bắt đầu tìm hiểu về Edit.</div>
+          </div>
+          <div class="card-item" data-year="2019">
+            <div class="card-item-title">Proficient at Editing</div>
+            <div class="card-item-desc">Thông thạo các phần mềm edit.</div>
+          </div>
+          <div class="card-item" data-year="2020">
+            <div class="card-item-title">Learning some Basic Coding Web & App</div>
+            <div class="card-item-desc" style="text-align: left; margin-left: 10px;">Tìm hiểu về lập trình Web và App.</div>
+          </div>
+          <div class="card-item" data-year="2021">
+            <div class="card-item-title">Doing Great at Coding Basic Website/App</div>
+            <div class="card-item-desc">Có khả năng lập trình 1 trang web đơn giản và độc đáo.
+              Có thể lập trình App cơ bản như C++ và một chút về C Sharp.
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-section" id="contact">
+      <div class="card-content">
+        <div class="card-subtitle" style="font-family: segoe UI;">LIÊN HỆ</div>
+        <div class="card-contact-wrapper">
+          <div class="card-contact" style="font-family: segoe UI; text-align: left;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" /></svg>
+            19/22/122 đường Láng, Thịnh Quang, Đống Đa, Hà Nội.
+          </div>
+          <div class="card-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>+84 962 913 298</div>
+          <div class="card-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <path d="M22 6l-10 7L2 6" /></svg>
+            chim31102007@gmail.com
+          </div>
+          <form action="https://facebook.com/ch1mmm/" target="_blank" rel="noopener noreferrer">
+          <button class="contact-me" style="font-family: segoe UI;">LIÊN HỆ NGAY</button>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="card-buttons">
+      <button data-section="#about" class="is-active">ABOUT</button>
+      <button data-section="#experience">EXPERIENCE</button>
+      <button data-section="#contact">CONTACT</button>
+    </div>
+  </div>
+</div>
+<!-- profile script -->
+  <script  src="profile-card.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
