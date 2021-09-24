@@ -182,8 +182,8 @@
   });
 
 
-  on('show.bs.modal', '#buy-ticket-modal', function(event) {
-    select('#buy-ticket-modal #ticket-type').value = event.relatedTarget.getAttribute('data-ticket-type')
+  on('show.bs.modal', '#buy-momo-modal', function(event) {
+    select('#buy-momo-modal #momo-type').value = event.relatedTarget.getAttribute('data-momo-type')
   })
 
  
