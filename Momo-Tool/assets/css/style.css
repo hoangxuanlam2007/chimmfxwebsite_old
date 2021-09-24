@@ -146,24 +146,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #closebtn {
   display: inline-block;
+  color: #ffffff;
   z-index: 9999;
-  color: rgb(202, 202, 202)ff;
+  background-color: transparent;
   border: none;
-  background-image: linear-gradient(-20deg, #ffffffd2 0%, #eeeeee 100%, #ffffff 100%);
-  box-shadow: 0 0 5px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1);
   height: 55px;
   width: 55px;
   position: relative;
-  top: 84px;
-  left: 485px;
+  top: 75px;
+  left: 570px;
   border-radius: 50%;
-  font-size: 30px;
 }
 #closebtn:hover {
-  color: #ffffff;
+  border: none;
   background-image: none;
-  background-color: rgb(255, 8, 0);
-  box-shadow: 0 0 5px rgb(255, 8, 0);
+  color: rgb(255, 8, 0);
 }
 
 
@@ -189,10 +186,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
-
 #rickroll {
-    animation: showBlock 0s 1s forwards;
+    animation: showBlock 0s 0.5s forwards;
     visibility: hidden;
 }
  
