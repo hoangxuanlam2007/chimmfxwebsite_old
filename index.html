@@ -542,7 +542,7 @@
                 </ul>
                 <hr>
                 <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-momo-modal" data-momo-type="pro-access"><span style="color: white;"><b>Mua Ngay</b></span> </button>
+                  <button onclick="moneyalertFunction()" type="button" class="btn" data-bs-target="#buy-momo-modal" data-momo-type="pro-access"><span style="color: white;"><b>Mua Ngay</b></span> </button>
                 </div>
               </div>
             </div>
@@ -565,7 +565,7 @@
                 </ul>
                 <hr>
                 <div class="text-center">
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-momo-modal" data-momo-type="premium-access"><span style="color: white;"><b>Mua Ngay</b></span> </button>
+                  <button onclick="moneyalertFunction()" type="button" class="btn" data-bs-target="#buy-momo-modal" data-momo-type="premium-access"><span style="color: white;"><b>Mua Ngay</b></span> </button>
                 </div>
 
               </div>
@@ -594,7 +594,7 @@
                   <div style="color: black;">
                     Email
                   </div>
-                  <input type="email" class="form-control" name="your-email" placeholder="Vd: chimmfx@host.domain" required>
+                  <input type="email" class="form-control" name="your-email" placeholder="Vd: yourname@mail.domain" required>
                 </div>
                 <div class="form-group mt-3">
                   <div style="color: black;">
@@ -613,7 +613,7 @@
                     Quốc gia
                   </div>
                   <select id="momo-type" name="momo-type" class="form-select">
-                    <option value="">-- Lựa chọn Quốc Gia --</option>
+                    <option value="standard-access">-- Lựa chọn Quốc Gia --</option>
                     <option value="Vietnam">Vietnam</option>
                     <option value="Afganistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
@@ -867,20 +867,27 @@
                     Phiên bản
                   </div>
                   <select id="momo-type" name="momo-type" class="form-select">
-                    <option value="">-- Lựa chọn phiên bản --</option>
+                    <option value="standard-access">-- Lựa chọn phiên bản --</option>
                     <option value="standard-access">Standard</option>
-                    <option value="pro-access" id="pro">Pro</option>
-                    <option value="premium-access" id="premium">Premium</option>
+                    <option value="pro-access" id="pro" disabled>Pro</option>
+                    <option value="premium-access" id="premium" disabled>Premium</option>
                   </select>
                 </div>
                 <div class="text-center mt-3">
-                    <button type="submit" id="muangay" onClick="myFunction()" class="btn"><strong>Mua Ngay</strong></button>
+                    <button type="submit" id="submit" onClick="myFunction()" class="btn"><strong>Mua Ngay</strong></button>
                 </div>
 
-                <script>
+                <script type="text/javascript">
                   function myFunction() {
-                    window.location.href="./Redirect-Momo/redirect-momo-tool";
-                  }
+                      alert("Bạn sẽ được chuyển đến trang Tải Miễn Phí tự động.");
+                      location.href = "./Redirect-Momo/redirect-momo-tool.html";
+                  };
+                </script>
+
+                <script type="text/javascript">
+                  function moneyalertFunction() {
+                      alert("Bạn không có đủ tiền, vui lòng nạp thêm! \rTài khoản hiện tại: 0 đồng.");
+                  };
                 </script>
 
             </div>
